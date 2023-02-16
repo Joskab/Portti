@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ota yhteyttä</title>
+    <link rel="stylesheet" href="yhteydenotto.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Koti</a></li>
+          <li><a href="minusta.html">Minusta</a></li>
+          <li><a href="projektit.html">Projektini</a></li>
+          <li><a href="yhteydenotto.html">Ota yhteyttä</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="contact">
+      <h2>Ota yhteyttä</h2>
+      <p>Mikäli sinulla on kysyttävää tai muita ideoita, ota yhteyttä!</p>
+      <form class="contact-form" action="yhteydenotto.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" name="submit" class="btn-primary">
+          Send Message
+        </button>
+      </form>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2023 Joska Riittinen All rights reserved.</p>
+    </footer>
+  </body>
+</html>
