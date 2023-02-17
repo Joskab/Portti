@@ -1,3 +1,5 @@
+/* Global styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,6 +15,26 @@ header {
   padding: 1rem;
 }
 
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -50,26 +72,6 @@ header {
   .menu-active .menu {
     display: block;
   }
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-}
-
-nav a:hover {
-  color: #ccc;
-  text-decoration: underline;
 }
 
 .hero {
@@ -172,6 +174,12 @@ nav a:hover {
   font-size: 1.2rem;
   text-align: center;
   margin-bottom: 30px;
+}
+
+.project-card:hover {
+  background-color: #333;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
 }
 
 footer {
