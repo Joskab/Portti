@@ -123,9 +123,8 @@ nav a:hover {
 
 footer {
   color: #777171;
-  padding: 1rem;
   text-align: center;
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   width: 100%;
