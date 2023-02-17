@@ -10,3 +10,10 @@ projectCards.forEach((card) => {
   const title = card.querySelector("h3");
   title.addEventListener("click", toggleDescription);
 });
+
+const menuIcon = document.querySelector(".menu-icon");
+const menu = document.querySelector("nav");
+
+menuIcon.addEventListener("click", () => {
+  menu.classList.toggle("menu-active");
+});
