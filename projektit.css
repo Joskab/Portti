@@ -1,5 +1,3 @@
-/* Global styles */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -28,8 +26,6 @@ ul {
   padding: 0 20px;
 }
 
-/* Header styles */
-
 header {
   background-color: #333;
   color: #fff;
@@ -48,9 +44,53 @@ nav ul {
 nav a {
   color: #fff;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
-/* Hero section styles */
+nav a:hover {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li {
+    margin: 1rem 0;
+  }
+
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 1rem;
+    background-color: #333;
+  }
+
+  .menu-active .menu {
+    display: block;
+  }
+}
 
 .hero {
   background-color: #e5e5e5;
@@ -67,8 +107,6 @@ nav a {
   font-size: 24px;
   margin-bottom: 40px;
 }
-
-/* Projects section styles */
 
 .projects {
   background-color: #f7f7f7;
@@ -113,8 +151,6 @@ nav a {
   cursor: pointer;
 }
 
-/* Footer styles */
-
 footer {
   background-color: #333;
   color: #fff;
@@ -124,5 +160,5 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 7%;
+  box-sizing: border-box;
 }

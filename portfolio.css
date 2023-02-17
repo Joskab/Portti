@@ -2,14 +2,12 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
   font-family: Georgia, serif;
-  margin: 0;
 }
-
-/* Header styles */
 
 header {
   background-color: #333;
@@ -29,31 +27,53 @@ nav ul {
 nav a {
   color: #fff;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
 }
 
 nav a:hover {
-  position: relative;
-  text-decoration: none;
+  color: #ccc;
+  text-decoration: underline;
 }
 
-nav a:hover::before {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.2s ease;
-}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-nav a:hover::before {
-  transform: scaleX(1);
-}
+  nav li {
+    margin: 1rem 0;
+  }
 
-/* Main styles */
+  .menu-icon {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
+  .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .menu li a {
+    display: block;
+    padding: 1rem;
+    background-color: #333;
+  }
+
+  .menu-active .menu {
+    display: block;
+  }
+}
 
 .hero {
   background-color: #222;
@@ -83,29 +103,21 @@ nav a:hover::before {
   margin-top: 1rem;
   transition: background-color 0.3s ease;
 }
+
 .btn-secondary:hover {
   background-color: #444;
   color: #fff;
 }
 
 .btn-primary {
-  display: inline-block;
   background-color: #333;
   color: #fff;
   border: 2px solid #444;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: transparent;
   background-color: #444;
 }
-
-/* Project styles */
 
 .projects {
   display: flex;
@@ -115,14 +127,13 @@ nav a:hover::before {
   background-color: #f6f6f6;
   padding: 50px 0;
 }
-/* Style the heading */
+
 .projects h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
 }
 
-/* Create a grid to display the project cards */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -130,6 +141,7 @@ nav a:hover::before {
   justify-items: center;
   margin-top: 50px;
 }
+
 .project-card {
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
@@ -139,7 +151,6 @@ nav a:hover::before {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: auto;
   height: 100%;
 }
 
@@ -166,9 +177,6 @@ nav a:hover::before {
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-
-/* Footer styles */
-
 footer {
   background-color: #333;
   color: #fff;
@@ -178,5 +186,5 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 7%;
+  box-sizing: border-box;
 }
