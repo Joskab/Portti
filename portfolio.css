@@ -83,7 +83,8 @@ nav a:hover {
 }
 
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.btn-third {
   display: inline-block;
   background-color: #fff;
   color: #333;
@@ -92,6 +93,7 @@ nav a:hover {
   font-weight: bold;
   margin-top: 1rem;
   transition: background-color 0.3s ease;
+  border-radius: 5px;
 }
 
 .btn-primary {
@@ -104,18 +106,23 @@ nav a:hover {
   color: #fff;
   border: 2.5px solid #444;
 }
-
-.btn-primary:hover {
-  background-color: #444;
+.btn-third {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #444;
+  font-size: small;
 }
 
-.btn-secondary:hover {
+.btn-primary:hover,
+.btn-secondary:hover,
+.btn-third:hover {
   background-color: #444;
 }
 
 .about-me {
   padding-top: 1%;
   padding-bottom: 1%;
+  padding-left: 1%;
 }
 
 .projects {
