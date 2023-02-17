@@ -15,6 +15,35 @@ header {
   padding: 1rem;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin: 5px 0;
+    background-color: #fff;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -34,44 +63,6 @@ nav a {
 nav a:hover {
   color: #ccc;
   text-decoration: underline;
-}
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav li {
-    margin: 1rem 0;
-  }
-
-  .menu-icon {
-    display: block;
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 1rem;
-  }
-
-  .menu-icon:hover {
-    cursor: pointer;
-  }
-
-  .menu {
-    display: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .menu li a {
-    display: block;
-    padding: 1rem;
-    background-color: #333;
-  }
-
-  .menu-active .menu {
-    display: block;
-  }
 }
 
 .hero {
