@@ -13,30 +13,7 @@ header {
   padding: 1rem;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
-}
-
-nav a:hover {
-  color: #ccc;
-  text-decoration: underline;
-}
 @media (max-width: 768px) {
-  nav {
-    display: none;
-  }
   nav ul {
     flex-direction: column;
     align-items: flex-start;
@@ -70,9 +47,29 @@ nav a:hover {
     background-color: #333;
   }
 
-  .menu-active .nav {
+  .menu-active .menu {
     display: block;
   }
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+}
+
+nav a:hover {
+  color: #ccc;
+  text-decoration: underline;
 }
 
 .hero {
