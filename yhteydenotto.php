@@ -8,7 +8,7 @@ if (isset($_POST['submit'])) {
     $body = "Name: $name\nEmail: $email\nMessage: $message";
     $headers = "From: $email\r\nReply-To: $email\r\n";
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for your message!";
+        echo "Kiitos viestistäsi!";
     } else {
         echo "Viestiä lähettäessä tapahtui odottamaton virhe.";
     }
