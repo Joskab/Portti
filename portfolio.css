@@ -146,6 +146,8 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   height: 100%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .project-card:hover {
