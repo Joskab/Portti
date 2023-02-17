@@ -113,6 +113,11 @@ nav a:hover {
   background-color: #444;
 }
 
+.about-me {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
