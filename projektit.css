@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 }
 
 body {
@@ -153,7 +152,7 @@ nav a:hover {
 footer {
   color: #777171;
   text-align: center;
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   width: 100%;
