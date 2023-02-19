@@ -125,6 +125,7 @@ nav a:hover {
   padding-top: 1%;
   padding-bottom: 1%;
   user-select: none;
+  text-align: center;
 }
 
 .ilma {
