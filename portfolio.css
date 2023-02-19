@@ -5,9 +5,19 @@
   margin: 0;
 }
 
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   font-family: Georgia, serif;
   font-size: larger;
+  transition: background-color 2s ease-in-out;
 }
 
 header {
@@ -123,29 +133,44 @@ nav a:hover {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 1%;
+  border: 0.5px #444;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 5px;
 }
 
+.about-me:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+  background-color: #333;
+  color: #fff;
+}
+
+.minusta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: start;
+}
+
+.ilma {
+  padding-top: 1.5%;
+}
 .projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2rem;
-  background-color: #f6f6f6;
-  padding: 50px 0;
+  padding: 50px 1;
 }
 
 .projects h2 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
-}
-
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 40px;
-  justify-items: center;
-  margin-top: 50px;
 }
 
 .project-card {
@@ -193,7 +218,6 @@ footer {
   text-align: center;
   position: static;
   bottom: 0;
-  left: 0;
   width: 100%;
   box-sizing: border-box;
 }
