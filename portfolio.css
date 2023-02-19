@@ -131,14 +131,6 @@ nav a:hover {
 .ilma {
   padding-top: 1.5%;
 }
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 2rem;
-  padding-left: 1%;
-  padding-right: 1%;
-}
 
 .projects {
   display: flex;
@@ -216,5 +208,5 @@ footer {
   bottom: 0;
   width: 100vw;
   box-sizing: border-box;
-  margin-top: 8%;
+  margin-top: 3.35%;
 }
