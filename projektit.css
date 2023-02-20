@@ -114,13 +114,13 @@ nav a:hover {
 
 .project-card h3 {
   font-size: 2rem;
-  text-align: start;
+  text-align: center;
   margin: 30px 0 20px 0;
 }
 
 .project-card p {
   font-size: 1.2rem;
-  text-align: start;
+  text-align: center;
   margin-bottom: 30px;
 }
 .project-card:hover {
