@@ -8,6 +8,7 @@ body {
   font-family: Georgia, serif;
   font-size: larger;
   margin: 0;
+  transition: background-color 2s ease-in-out;
 }
 header {
   background-color: #333;
@@ -72,13 +73,24 @@ nav a:hover {
   font-weight: bold;
   color: #333;
 }
+.ilma {
+  padding-top: 1.5%;
+}
 
 .contact {
   background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   padding: 2em;
   max-width: 500px;
   margin: 0 auto;
+  user-select: none;
+  background-color: #c4c4c49c;
+  border-radius: 5px;
+}
+.contact:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
 }
 
 .contact p {
@@ -99,7 +111,7 @@ nav a:hover {
   width: 94%;
   padding: 0.8em;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 1.1em;
   margin-top: 0.5em;
 }
@@ -110,7 +122,7 @@ nav a:hover {
   border: none;
   padding: 1em;
   font-size: 1.1em;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-top: 1em;
   margin-bottom: 4rem;
 }
@@ -127,5 +139,5 @@ footer {
   bottom: 0;
   width: 100vw;
   box-sizing: border-box;
-  margin-top: 2.5%;
+  margin-top: 1.1%;
 }
