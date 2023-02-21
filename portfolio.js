@@ -37,3 +37,23 @@ function changeBackgroundColor() {
 
 // Set an interval to change the background color every 2 seconds
 setInterval(changeBackgroundColor, 2000);
+
+/* Add this JavaScript to your pages */
+document.addEventListener("DOMContentLoaded", function () {
+  var links = document.querySelectorAll("a");
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function (event) {
+      event.preventDefault();
+      var href = this.getAttribute("href");
+      document.body.classList.add("fade-out");
+      setTimeout(function () {
+        window.location = href;
+      }, 500);
+    });
+  }
+});
+
+window.addEventListener("load", function () {
+  document.body.classList.remove("fade-in");
+});
