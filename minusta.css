@@ -62,9 +62,7 @@ nav a:hover {
 footer {
   color: #777171;
   text-align: center;
-  position: static;
-  bottom: 0;
+  position: relative;
   width: 100vw;
   box-sizing: border-box;
-  margin-top: 45%;
 }
