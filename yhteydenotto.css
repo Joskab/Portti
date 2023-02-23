@@ -89,7 +89,9 @@ nav a:hover {
 .contact {
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  padding: 2em;
+  padding: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
   width: 500px;
   margin: 0 auto;
   user-select: none;
@@ -106,6 +108,11 @@ nav a:hover {
   user-select: none;
   background-image: linear-gradient(to bottom right, #c4c4c49c, #222);
 }
+@media (max-width: 768px) {
+  .contact {
+    width: 94vw;
+  }
+}
 .contact:hover {
   transform: scale(1.01);
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
@@ -116,6 +123,7 @@ nav a:hover {
   text-align: center;
   font-size: 1.2em;
   color: #222;
+  width: 100%;
 }
 
 .contact-form label {
@@ -123,29 +131,36 @@ nav a:hover {
   font-size: 1.1em;
   margin-top: 1.5em;
   color: #111;
+  text-align: center;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 94%;
+  width: 100%;
   padding: 0.8em;
   border: 2px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1.2em;
   margin-top: 0.5em;
 }
 
 .contact-form button {
   color: #fff;
-  border: none;
+  border: 2.5px solid #444;
   padding: 1em;
   font-size: 1.1em;
   border-radius: 15px;
   margin-top: 1em;
   margin-bottom: 4rem;
+  margin-left: 9rem;
   background-image: linear-gradient(to bottom right, #222, #444);
 }
 
+@media (max-width: 768px) {
+  .contact-form button {
+    margin-left: 5rem;
+  }
+}
 .contact-form button:hover {
   background-image: linear-gradient(to bottom right, #333, #111);
   cursor: pointer;
